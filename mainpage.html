@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Z-drive</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+	<section class="hero">
+		<header>
+			<div class="wrapper">
+				<a href="#"><img src="img/logo.png" class="logo" alt="" title=""/></a>
+				<a href="#" class="hamburger"></a>
+				<nav>
+					<ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<a href="#myPopup" class="login_btn"  data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Login</a>
+					  <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+      <form method="post" action="/action_page_post.php">
+        <div>
+          <h3>Login information</h3>
+          <label for="usrnm" class="ui-hidden-accessible">Username:</label>
+          <input type="text" name="user" id="usrnm" placeholder="Username">
+          <label for="pswd" class="ui-hidden-accessible">Password:</label>
+          <input type="password" name="passw" id="pswd" placeholder="Password">
+          <label for="log">Keep me logged in</label>
+          <input type="checkbox" name="login" id="log" value="1" data-mini="true">
+          <input type="submit" data-inline="true" value="Log in">
+        </div>
+      </form>
+    </div>
+  </div>
+				</nav>
+			</div>
+		</header><!--  end header section  -->
+
+			<section class="caption">
+				<h2 class="caption">Save your files on our Drive</h2>
+				<h3 class="properties">Images - Text - Informations</h3>
+			</section>
+	</section><!--  end hero section  -->
+
+
+	<section class="search">
+		<div class="wrapper">
+			<form action="#" method="post">
+				<input type="text" id="search" name="search" placeholder="What are you looking for?"  autocomplete="off"/>
+				
+			</form>
+			<a href="#" class="advanced_search_icon" id="advanced_search_btn"></a>
+		</div>
+
+		<div class="advanced_search">
+			<div class="wrapper">
+				<span class="arrow"></span>
+				<form action="#" method="post">
+					<div class="search_fields">
+						<input type="text" class="float" id="check_in_date" name="check_in_date" placeholder="DOCUMENT"  autocomplete="off">
+
+						<hr class="field_sep float"/>
+
+						<input type="text" class="float" id="check_out_date" name="check_out_date" placeholder="IMAGE"  autocomplete="off">
+					</div>
+					<div class="search_fields">
+						<input type="text" class="float" id="min_price" name="min_price" placeholder="VIDEO"  autocomplete="off">
+
+						<hr class="field_sep float"/>
+
+						<input type="text" class="float" id="max_price" name="max_price" placeholder="WEBSITE"  autocomplete="off">
+					</div>
+					<div class="search_fields">
+						<input type="text" class="float" id="min_price" name="min_price" placeholder="TEXT"  autocomplete="off">
+
+						<hr class="field_sep float"/>
+
+						<input type="text" class="float" id="max_price" name="max_price" placeholder="BOOKMARKED"  autocomplete="off">
+					</div>
+					
+					<input type="submit" id="submit_search" name="submit_search" placeholder="SUBMIT" value="SUBMIT"/>
+				</form>
+			</div>
+		</div><!--  end advanced search section  -->
+	</section><!--  end search section  -->
+
+
+	<section class="listings">
+		<div class="wrapper">
+			<ul class="properties_list">
+				<li>
+					<a href="#">
+						<img src="img/bm.png" height="100" width="100" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">BOOKMARKED</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Quora Answer on SDD</a>
+						</h1>
+						<h2> 1 March 2018 <span class="property_size">100 KB</span></h2>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/doc.png" height="100" width="100" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">DOCUMENT</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">SDD DA-1</a>
+						</h1>
+						<h2>25 March 2018<span class="property_size">1 MB</span></h2>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/img1.jpg" height="100" width="100" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">IMAGE</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">SDD Meme</a>
+						</h1>
+						<h2>28 March 2018 <span class="property_size">10 KB</span></h2>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/text.png" height="100" width="100" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">TEXT</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Madiajagan Sir's Quote</a>
+						</h1>
+						<h2>26 March 2018 <span class="property_size">5 KB</span></h2>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/video.jpg" height="100" width="100" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">VIDEO</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Learn to draw Class Diagram</a>
+						</h1>
+						<h2>25 March 2018 <span class="property_size">96 MB</span></h2>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/website.png" height="100" width="100" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">WEBSITE</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">https://vit.ac.in</a>
+						</h1>
+						<h2>1 April 2018 <span class="property_size">Dynamic</span></h2>
+					</div>
+				</li>
+			</ul>
+			<div class="more_listing">
+				<a href="#" class="more_listing_btn">View More Bookmarks</a>
+			</div>
+		</div>
+	</section>	<!--  end listing section  -->
+
+	<footer>
+		<div class="wrapper footer">
+			<ul>
+				
+				<li class="about">
+					<p>More stuff about zdrive</p>
+					<ul>
+						<li><a href="https://vit.ac.in" class="facebook" target="_blank"></a></li>
+						<li><a href="http://vit.ac.in" class="twitter" target="_blank"></a></li>
+						<li><a href="http://vit.ac.in" class="google" target="_blank"></a></li>
+						<li><a href="http://vit.ac.in" class="skype" target="_blank"></a></li>
+					</ul>
+				</li>
+				<h3>DEVELOPERS: AADITYA VAIDYA, DEV KUMAR and YASH SHAH</h3>
+			</ul>
+		</div>
+
+		<div class="copyrights wrapper">
+				<h3>Zlabs</h3> .<br /> All Rights Reserved.
+		</div>
+	</footer><!--  end footer  -->
+	
+</body>
+</html>
